@@ -6,4 +6,31 @@
 
 // Attendee.java     Date: __________________
 // @Author ___________________________
+
+public class Attendee {
+	
+	private String name;
+	private int table;
+	private int seatNum;
+	private int company;
+	
+	public Attendee(String initName, int initCoId) {
+		
+		name = initName;
+		company = initCoId;
+		
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	//rest of getters
+	
+	public void setTable(int t) {
+		table = t;
+	}
+	
+	
+}
   
