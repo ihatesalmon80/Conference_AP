@@ -30,6 +30,7 @@ public class Attendee {
 	public void setTable(int t) {
 		table = t;
 	}
+
 	
 	
 }
