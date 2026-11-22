@@ -25,10 +25,26 @@ public class Attendee {
 		return name;
 	}
 	
+	public int getcoID() {
+		return company;
+	}
+	
+	public int getTable() {
+		return table;
+	}
+	
+	public int getSeatNum() {
+		return seatNum;
+	}
+	
 	//rest of getters
 	
 	public void setTable(int t) {
 		table = t;
+	}
+	
+	public void setSeatNum(int s) {
+		seatNum = s;
 	}
 
 	

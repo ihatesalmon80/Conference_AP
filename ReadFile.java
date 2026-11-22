@@ -15,8 +15,8 @@ public class ReadFile {
         //array of strings
         //for each line, send the data to the attendee, convert elements to proper type
         //int coID = Integer.parseInt(arrAttend[coID])
-					//Math.random()
-        System.out.println(data);
+					
+        System.out.println(arrAttend);
       }
     } catch (FileNotFoundException e) {
       System.out.println("An error occurred.");
