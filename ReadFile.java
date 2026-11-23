@@ -2,12 +2,19 @@ import java.io.File;                  // Import the File class
 import java.io.FileNotFoundException; // Import this class to handle errors
 import java.util.Scanner;             // Import the Scanner class to read text files
 
+
+/*class that reads input files
+ *any file with delimited separated values
+ *specifically made for attendee class 
+ */
 public class ReadFile {
+	
+  //returns Attendee[] object which is an array with all attendees
   public Attendee[] readFile(File myObj) {
 	//File myObj = new File("filename.txt");
     // try-with-resources: Scanner will be closed automatically
 
-    Attendee[] attendees = null;
+    Attendee[] attendees = null; //declare array
     
     try {
 		Scanner lineCounter = new Scanner(myObj);
