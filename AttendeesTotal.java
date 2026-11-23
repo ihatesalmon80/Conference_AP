@@ -26,4 +26,8 @@ public class AttendeesTotal {
 		}
 	}
 	
+	public Attendee[] getAttendees() {
+		return allAttendees;
+	}
+	
 }
