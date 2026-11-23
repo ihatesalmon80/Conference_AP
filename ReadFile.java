@@ -21,17 +21,30 @@ public class ReadFile {
 		
 	attendees = new Attendee[lineCount];
 	
-    try (Scanner myReader = new Scanner(myObj)) {
-      while (myReader.hasNextLine()) {
-        String data = myReader.nextLine();
-        String[] arrAttend = data.split(",");
-        //array of strings
-        //for each line, send the data to the attendee, convert elements to proper type
-        //int coID = Integer.parseInt(arrAttend[coID])
-					
-        System.out.println(arrAttend);
-      }
-    } 
+		try (Scanner myReader = new Scanner(myObj)) {
+			
+			int i=0;
+			while (myReader.hasNextLine()) {
+				String data = myReader.nextLine();
+				String[] arrAttend = data.split(",");
+				
+				//array of strings
+				//for each line, send the data to the attendee, convert elements to proper type
+				//int coID = Integer.parseInt(arrAttend[coID])
+				
+				int index = Integer.parseInt(arrAttend[0]); // string to int
+				String lastName = arrAttend[1];
+				String firstName = arrAttend[2];
+				int coID = Integer.parseInt(arrAttend[3]);
+				
+				String fullName = firstName + " " + lastName; // making full name
+				
+				attendees[i] = new Attendee(fullName, coID); //call to attendee constructor
+				i += 1;
+		
+			//System.out.println(arrAttend);
+			}
+		} 
     
     } catch (FileNotFoundException e) {
       System.out.println("An error occurred.");
