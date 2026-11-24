@@ -13,7 +13,7 @@ public class Table {
 	int seatsPerTable;
 	Attendee[][] seatingChart = new Attendee[tables][seatsPerTable];
 	
-	public Table(int nTables, int nSeats) {
+	public Table(int nTables, int nSeats, AttendeesTotal allAttendees) {
 		
 		tables = nTables;
 		seatsPerTable = nSeats;
@@ -36,6 +36,7 @@ public class Table {
 	}
 	
 	public Attendee[] makeTable() {
+		//math . random to find an index, somehow make no duplicate such as changing a number in an array to 0 and then use if statement to check if its a non-zero number
 		Attendee one = new Attendee("hi", 2);
 		Attendee two = new Attendee("hello",3);
 		Attendee[] test = {one, two};
