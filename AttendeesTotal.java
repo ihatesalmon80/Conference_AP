@@ -8,11 +8,12 @@ public class AttendeesTotal {
 	
 	private Attendee[] allAttendees = new Attendee[100];
 	
-	public AttendeesTotal(Attendee[] preReg) {
+	public AttendeesTotal(Attendee[] preReg) { //in the tester or whatever the preReg array would be the return of ReadFile.java
 		
 		for (int i = 0; i < preReg.length; i++) {
 			allAttendees[i] = preReg[i];
 		}
+		addAttendees();
 		
 	}
 	/*allows user to manually add last two attendees
@@ -23,11 +24,11 @@ public class AttendeesTotal {
 	public void addAttendees() {
 		Scanner scan = new Scanner(System.in);
 		for (int j = 0; j < 10; j++) {
-			System.out.println("Enter first name:");
+			System.out.print("Enter first name:");
 			String firstName = scan.nextLine();
-			System.out.println("Enter last name:");
+			System.out.print("Enter last name:");
 			String lastName = scan.nextLine();
-			System.out.println("Enter company ID:");
+			System.out.print("Enter company ID:");
 			int coID = scan.nextInt();
 			scan.nextLine(); //buffer
 			

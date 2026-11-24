@@ -10,7 +10,7 @@ import java.util.Scanner;             // Import the Scanner class to read text f
 public class ReadFile {
 	
   //returns Attendee[] object which is an array with all attendees
-  public Attendee[] readFile(File myObj) {
+    public Attendee[] readFile(File myObj) {
 	//File myObj = new File("filename.txt");
     // try-with-resources: Scanner will be closed automatically
 
