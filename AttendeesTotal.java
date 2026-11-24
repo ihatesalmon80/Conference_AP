@@ -20,7 +20,8 @@ public class AttendeesTotal {
 	 *first name, last name, company id
 	 *adds 10 attendees to array with other 90
 	 */
-	public void addAttendees(Scanner scan) {
+	public void addAttendees() {
+		Scanner scan = new Scanner(System.in);
 		for (int j = 0; j < 10; j++) {
 			System.out.println("Enter first name:");
 			String firstName = scan.nextLine();
