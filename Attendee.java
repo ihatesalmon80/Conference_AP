@@ -6,7 +6,7 @@
 
 // Attendee.java     Date: __________________
 // @Author ___________________________
-
+// instructions on how to create an attendee
 public class Attendee {
 	
 	private String name;
